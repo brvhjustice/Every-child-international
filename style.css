@@ -1,0 +1,237 @@
+body {
+    font-family: "Montserrat";
+    text-align: center;
+  }
+
+  
+/* Navigation Bar */
+
+.navigation-bar{
+    background-image: url(images/1112.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-item {
+    padding: 0 18px;
+    text-align: right;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+  }
+
+.donate{
+  text-decoration: none;
+    text-align: center;
+    background-color: #8DFA49;
+    border-radius: 3px;
+}
+
+
+/* Top Heading */
+
+.top-heading{      
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top-head{
+padding: 2.5rem 0 2.5rem 7rem;
+color: #fff;
+}
+
+
+/* Buttons */
+
+.download-button {
+    margin: 2% 2% 2% 0;
+}
+
+
+.btn{
+    color: #fff;
+}
+
+
+.dnbtn {
+    background: #34BE82;
+    background-image: -webkit-linear-gradient(top, #34BE82, #34BE82);
+    background-image: -moz-linear-gradient(top, #34BE82, #34BE82);
+    background-image: -ms-linear-gradient(top, #34BE82, #34BE82);
+    background-image: -o-linear-gradient(top, #34BE82, #34BE82);
+    background-image: linear-gradient(to bottom, #34BE82, #34BE82);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+.dnbtn:hover {
+    background: #3ac989;
+    background-image: -webkit-linear-gradient(top, #3ac989, #2FDD92);
+    background-image: -moz-linear-gradient(top, #3ac989, #2FDD92);
+    background-image: -ms-linear-gradient(top, #3ac989, #2FDD92);
+    background-image: -o-linear-gradient(top, #3ac989, #2FDD92);
+    background-image: linear-gradient(to bottom, #3ac989, #2FDD92);
+    text-decoration: none;
+  }
+
+
+
+  /* About Section */
+
+.student{
+    width: 20rem;
+    margin: 2.5rem 0 2.5rem 2.5rem;
+    
+  }
+
+ 
+
+.about-paragraph{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    width: 50rem;
+    float: right;
+    padding: 20px 0 0 10px;
+    position: absolute; 
+    left: 30%;
+    top: 30rem; 
+}
+
+/* .child{
+    float: left;
+} */
+
+
+/* Overview Section */
+
+.overview{
+  background-color: #000;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.overview-heading{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: darkorange;
+}
+
+.overview-text{
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.volunteer{
+  background-color: darkorange;
+  color: #000;
+  text-align: center;
+  padding: 2.5rem 0 2.5rem 0;
+
+}
+
+.volunteer-text{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+}
+
+.team-heading{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  padding-top: 5rem;
+}
+
+/* .fab{
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-youtube{
+  background: #75ca06;
+  color: #000;
+} */
+
+
+footer {
+    text-align: center;
+    background-color: #349e89;
+    font-size: 15px;
+  	color: #fff;
+    margin-bottom: 0;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 15px;
+  color: #fff;
+} 
+
+/* .social-icon {
+    margin: 10px 18px;
+    font-size: 25px;
+    color: rgb(148, 0, 0);
+  } 
+
+.social-icon:hover {
+    color: #283532;
+   
+  }  */
+
+@media (max-width: 1028px) {
+    /* Navigation Bar */
+.top-heading{      
+    font-size: 2.5rem;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.top-head{
+  padding-left: 2rem;
+    color: #fff;
+}
+
+.navigation-bar{
+    background-image: url(images/1112.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+  /* About Section */
+
+  .student{
+    width: 20rem;
+    margin: 15px auto;
+    display: block;
+    
+  }
+
+.about-paragraph{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    width: 80%;
+    text-align: center;
+    position: relative; 
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: 50px;
+}
+
+}
