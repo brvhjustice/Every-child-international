@@ -207,6 +207,7 @@ footer {
 
 
 .donate-item{
+  width: 50px;
   position: relative;
   left: 50%;
 }
