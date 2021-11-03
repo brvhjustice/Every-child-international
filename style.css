@@ -1,10 +1,10 @@
 body {
     font-family: "Montserrat";
-    text-align: center;
   }
 
   
 /* Navigation Bar */
+
 
 .navigation-bar{
     background-image: url(images/1112.jpg);
@@ -20,23 +20,32 @@ body {
   }
 
 .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-family: "Montserrat-Light";
   }
 
+.cd {
+  justify-content: right;
+}
+
 .donate{
-  text-decoration: none;
+    text-decoration: none;
     text-align: center;
     background-color: #8DFA49;
     border-radius: 3px;
+    width: 80px;
 }
+
+
+
 
 
 /* Top Heading */
 
 .top-heading{      
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .top-head{
@@ -107,9 +116,7 @@ color: #fff;
     top: 30rem; 
 }
 
-/* .child{
-    float: left;
-} */
+
 
 
 /* Overview Section */
@@ -152,18 +159,6 @@ color: #fff;
   padding-top: 5rem;
 }
 
-/* .fab{
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.fa-youtube{
-  background: #75ca06;
-  color: #000;
-} */
 
 
 footer {
@@ -180,18 +175,9 @@ footer {
   color: #fff;
 } 
 
-/* .social-icon {
-    margin: 10px 18px;
-    font-size: 25px;
-    color: rgb(148, 0, 0);
-  } 
 
-.social-icon:hover {
-    color: #283532;
-   
-  }  */
 
-@media (max-width: 1028px) {
+@media (max-width: 1028px)  {
     /* Navigation Bar */
 .top-heading{      
     font-size: 2.5rem;
@@ -206,10 +192,23 @@ footer {
 }
 
 .navigation-bar{
-    background-image: url(images/1112.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
+}
+
+.navbar{
+  justify-content: right;
+}
+
+
+.navbar-brand{
+  position: relative;
+  right: 2%;
+}
+
+
+.donate-item{
+  position: relative;
+  left: 50%;
 }
 
 
@@ -235,3 +234,4 @@ footer {
 }
 
 }
+
