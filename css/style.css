@@ -112,9 +112,9 @@ color: #fff;
 
 
 .overview{
-  background-color: #fff;
-  text-align: right;
-  margin: 10rem;
+  
+  margin: 3rem 0 5rem 10rem;
+  /* margin: 10rem;  */
 }
 
 .overview-position{
@@ -122,18 +122,20 @@ color: #fff;
   text-align: right;
   float: left;
   width: 30rem;
+  padding-right: 5rem;
+  /* margin-left: 10rem; */
 }
 
 .overview-heading{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 5rem;
-  color: darkorange;
+  /* font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;*/
+  color: darkorange; 
   text-align: right;
   
 }
 
 .overview-paragraph{
-  width: 30rem;
+  /* width: 30rem; */
   font-size: 1.5rem;
 }
 
@@ -142,14 +144,13 @@ color: #fff;
 }
 
 .over{
-  margin-top: 2rem;
+  margin-top: 8rem;
 }
 
 /* Volunteer Section */
 
 .volunteer{
   font-family: 'Montserrat', sans-serif;
- 
   background-color: darkorange;
   color: #000;
   text-align: center;
@@ -159,6 +160,8 @@ color: #fff;
 
 .volunteer-heading{
   font-size: 4.5rem;
+  
+ font-weight: bolder;
 }
 
 .volunteer-paragraph{
@@ -169,8 +172,9 @@ color: #fff;
 /* Team Section */
 
 .team-heading{
-  text-align: center;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  text-align: center;
   font-size: 5rem;
   padding-top: 5rem;
 }
@@ -189,11 +193,7 @@ footer {
     margin-bottom: 0;
 }
 
-/* .footer p {
-	margin-top: 25px;
-	font-size: 15px;
-  color: #fff;
-}  */
+
 
 .social{
   font-size: 5rem;
@@ -209,10 +209,10 @@ footer {
   color: #EAF6F6;
   font-size: 1rem;
   font-style: italic;
-  /* padding: 20px 2rem; */
 }
 
 @media (max-width: 1028px)  {
+
     /* Navigation Bar */
 .top-heading{      
     font-size: 2.5rem;
@@ -335,30 +335,37 @@ width: auto;
 
 /* Overview Section */
 
+
 .overview{
-text-align: center;
-margin: 3rem auto;
+margin: auto;
 }
 
 .overview-position{
 font-family: 'Montserrat', sans-serif;
 float: none;
-width: 20rem;
+width: auto;
+text-align: center;
+padding: 0;
 }
 
 .overview-heading{
+  
 font-family: 'Montserrat', sans-serif;
+font-size: 2rem;
+font-weight: bolder;
+text-align: center;
+/* font-family: 'Montserrat', sans-serif;
 font-size: 2rem;
 color: darkorange;
 text-align: center;
-margin-left: 3rem;
+margin-left: auto; */
 }
 
 .overview-paragraph{
-text-align: center;
+/* text-align: center; */
 /* width: 17rem; */
 font-size: 1rem;
-margin-left: 3rem;
+/* margin-left: auto; */
 }
 
 .scope{
@@ -370,10 +377,9 @@ color: #000;
 
 .volunteer{
 font-family: 'Montserrat', sans-serif;
-
+text-align: center;
 background-color: darkorange;
 color: #000;
-text-align: center;
 padding: 1rem 0;
 
 }
