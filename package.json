@@ -1,0 +1,31 @@
+{
+  "name": "every-child-int",
+  "version": "1.0.0",
+  "description": "This is a website for an NGO whose aim is to help kids and the youth with education and educational materials",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brvhjustice/Every-child-international.git"
+  },
+  "keywords": [
+    "Every",
+    "Child",
+    "International",
+    "website"
+  ],
+  "author": "Justice Creativity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brvhjustice/Every-child-international/issues"
+  },
+  "homepage": "https://github.com/brvhjustice/Every-child-international#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14",
+    "paypal-rest-sdk": "^1.8.1"
+  }
+}
