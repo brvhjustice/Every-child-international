@@ -43,7 +43,6 @@
               <button class="navbar-toggler "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
               </button>
-              
               <div class="collapse navbar-collapse cd style="justify-content: right;"" id="navbarNavAltMarkup">
                 <ul class="navbar-nav ml-auto" >
                     <li class="nav-item">
@@ -56,12 +55,15 @@
                         <a class="nav-link " href="#">CONTACT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">VOLUNTEER</a>
+                        <a class="nav-link " href="https://forms.gle/DiBk5a6RbdmhZovV6">VOLUNTEER</a>
                     </li>
                     <!-- <li class="nav-item donate-item"> -->
-                    <li class="nav-item"></li>                       
-                        <a class="nav-link donate1" style="color: #fff; background-color: darkorange; text-align: right;" href="#">DONATE</a> 
+                      <form action="/pay" method="post">
+                    <li class="nav-item">
+                      <button type="submit" id="myDonate" onclick="" class="btn btn-md btn-warning">DONATE</button>                      
+                        <!-- <a class="nav-link donate1" style="color: #fff; background-color: darkorange; text-align: right;" type="submit">DONATE</a>  -->
                 </li>
+                </form>
                 </ul>
               </div>
             </nav>
@@ -71,10 +73,17 @@
           <div class="top-head">
             <!-- Big Heading -->
               <h1 class="top-heading">Every Child getting a hope for the future and equal opportunities.</h1>
-              <div class="voln-button">
-                <button type="button" onclick="" class="btn btn-lg btn-warning">DONATE</button>
-                <button type="button"  class="btn btn-outline-light btn-lg "> VOLUNTEER</button>
-              </div>
+              
+                <div class="voln-button">
+                  <form action="/pay" method="post">
+                  <button type="submit" id="myDonate" onclick="" class="btn btn-lg btn-warning">DONATE</button>
+                <!-- </form> -->
+                <a class="btn btn-outline-light btn-lg" href="https://forms.gle/DiBk5a6RbdmhZovV6">VOLUNTEER</a>
+              </form>
+                  <!-- <button type="submit"  class="btn btn-outline-light btn-lg "> <a href="https://forms.gle/DiBk5a6RbdmhZovV6">VOLUNTEER</a> </button> -->
+                </div>
+              
+              
           </div>
               
     </Section>
@@ -112,7 +121,8 @@
     <section class="volunteer">
         <h1 class="volunteer-heading">Become a Volunteer</h1>
         <p class="volunteer-paragraph">Joins us put give hope to every child</p>
-        <a class="btn btn-outline-light btn-lg voln-button" onclick="//forms.gle/Z17XBfXk8rXEhEwF7" href="">VOLUNTEER</a>
+        <a class="btn btn-outline-light btn-lg voln-button" href="https://forms.gle/DiBk5a6RbdmhZovV6">VOLUNTEER</a>
+        <!-- <a href="https://forms.gle/DiBk5a6RbdmhZovV6">VOLUNTEER</a> -->
         <!-- <button type="button" class="btn btn-outline-dark btn-lg download-button">VOLUNTEER</button> -->
     </section>
 

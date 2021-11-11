@@ -1,7 +1,8 @@
 const express = require('express');
 const ejs = require('ejs');
 const paypal = require('paypal-rest-sdk');
-
+const MongoClient = require('mongodb').MongoClient;
+// var url = "mongodb://localhost:27017/mydb";
 
 paypal.configure({
     'mode': 'sandbox', //sandbox or live
@@ -17,7 +18,13 @@ app.get("/", function(req, res){
     res.sendFile(__dirname + "/index.html")
 })
 
-app.post('pay', (req, res) => {
+app.get("/volunteer.html", function(req, res){
+    res.sendFile(__dirname + "volunteer.html")
+})
+
+
+
+app.post('/pay', (req, res) => {
     const create_payment_json = {
         "intent": "sale",
         "payer": {
@@ -55,15 +62,40 @@ app.post('pay', (req, res) => {
                     
                 }
             }
-            console.log("Create Payment Response");
-            console.log(payment);
+           
+        }
+    });
+});
+
+app.get('/success', (req, res) => {
+    const payerId = req.query.PayerID;
+    const paymentId = req.query.paymentId;
+
+    const execute_payment_json = {
+        "payer_id": payerId,
+        "transactions": [{
+            "amount": {
+                "currency": "USD",
+                "total": "25.00"
+            }
+        }]
+    };
+    paypal.payment.execute(paymentId, execute_payment_json, function(error, payment){
+        if (error) {
+            console.log(error.response);
+            throw error;
+        } else {
+            // console.log("Get Payment Response");
+            console.log(JSON.stringify(payment));
+            res.sendFile(__dirname + "/public/success.html")
         }
     });
 });
 
 
+app.get('/cancel', (req, res) => res.send('Cancelled'));
 
 
-app.listen(process.env.PORT, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log('Server is running on port 3000');
 });
