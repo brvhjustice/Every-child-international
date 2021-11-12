@@ -1,3 +1,5 @@
+
+require('dotenv').config()
 const express = require('express');
 const ejs = require('ejs');
 const paypal = require('paypal-rest-sdk');
@@ -6,14 +8,15 @@ const MongoClient = require('mongodb').MongoClient;
 
 paypal.configure({
     'mode': 'sandbox', //sandbox or live
-    'client_id': 'AQv5o0fAMucABb4vkjh7SQLBCYOQBfqqtdMjcBhiVZ1MKCmlwvJOUvQt1FyNuyejqruEYmTZRkptgYFU',
-    'client_secret': 'ECkZgiDwHb-ftVCE7D1ybMGmAXJ828btp0iVuZrXUXk8gNBl2jv3zu988W0TGumc1x8fKiafUDMsqLLO'
-  });
-
+     client_id: process.env.CLIENT_ID,
+     client_secret: process.env.CLIENT_SECRET
+     });
+  
 
 const app = express();
 app.set('view engine', 'ejs')
 app.use(express.static("public"));
+
 app.get("/", function(req, res){
     res.sendFile(__dirname + "/index.html")
 })
@@ -22,7 +25,10 @@ app.get("/volunteer.html", function(req, res){
     res.sendFile(__dirname + "volunteer.html")
 })
 
-
+app.get("/success.html", function(req, res){
+    res.sendFile(__dirname + "../index.html")
+    console.log("Back Home Successfully");
+})
 
 app.post('/pay', (req, res) => {
     const create_payment_json = {
@@ -93,7 +99,7 @@ app.get('/success', (req, res) => {
 });
 
 
-app.get('/cancel', (req, res) => res.send('Cancelled'));
+app.get('/cancel', (req, res) => res.sendFile(__dirname + "/public/cancel.html"));
 
 
 app.listen(process.env.PORT || 3000, function() {
