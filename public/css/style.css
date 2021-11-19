@@ -179,7 +179,10 @@ color: #fff;
   padding-top: 5rem;
 }
 
-
+.image1{
+  background-image: url(../images/1.jpeg);
+  background-color: #000;
+}
 /* Footer Section */
 
 

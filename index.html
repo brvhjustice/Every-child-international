@@ -18,9 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="public/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     
     <!-- Bootstrap CSS -->
@@ -30,6 +30,7 @@
 
 </head>
 <body>
+ 
     <!-- Navigation Bar -->
 
   
@@ -38,7 +39,7 @@
             <div class="container-fluid">
                
                  <nav class="navbar navbar-expand-lg navbar-dark "> 
-                  <a class="navbar-brand" href="#"><img width="75px" class="" src="images/logo.png" alt="Every Child Internation logo"></a>
+                  <a class="navbar-brand" href="#"><img width="75px" class="" src="images/logo.png" alt="Every Child International logo"></a>
              
               <button class="navbar-toggler "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
@@ -49,21 +50,22 @@
                         <a class="nav-link home active" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">ABOUT US</a>
+                        <a class="nav-link " href="#about">ABOUT US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">CONTACT</a>
+                        <a class="nav-link " href="#contact">CONTACT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="https://forms.gle/DiBk5a6RbdmhZovV6">VOLUNTEER</a>
                     </li>
                     <!-- <li class="nav-item donate-item"> -->
-                      <form action="/pay" method="post">
+                      <!-- <form action="/pay" method="post"> -->
                     <li class="nav-item">
-                      <button type="submit" id="myDonate" onclick="" class="btn btn-md btn-warning">DONATE</button>                      
+                      <a href="views/donate.html" class="btn btn-md btn-warning">DONATE</a>
+                      <!-- <button type="submit" id="myDonate" onclick="" class="btn btn-md btn-warning"> DONATE</button>                       -->
                         <!-- <a class="nav-link donate1" style="color: #fff; background-color: darkorange; text-align: right;" type="submit">DONATE</a>  -->
-                </li>
-                </form>
+                    </li>
+                <!-- </form> -->
                 </ul>
               </div>
             </nav>
@@ -74,22 +76,24 @@
             <!-- Big Heading -->
               <h1 class="top-heading">Every Child getting a hope for the future and equal opportunities.</h1>
               
-                <div class="voln-button">
-                  <form action="/pay" method="post">
-                  <button type="submit" id="myDonate" onclick="" class="btn btn-lg btn-warning">DONATE</button>
+                <div class="voln-button" id="">
+                    <a href="views/donate.html" class="btn btn-lg btn-warning">DONATE</a>
+                  <!-- <button type="submit" id="myDonate" onclick="" class="btn btn-lg btn-warning">DONATE</button> -->
+                  <!-- <input type="number" id="amount"> -->
                 <!-- </form> -->
                 <a class="btn btn-outline-light btn-lg" href="https://forms.gle/DiBk5a6RbdmhZovV6">VOLUNTEER</a>
-              </form>
+              <!-- </form> -->
                   <!-- <button type="submit"  class="btn btn-outline-light btn-lg "> <a href="https://forms.gle/DiBk5a6RbdmhZovV6">VOLUNTEER</a> </button> -->
                 </div>
               
               
           </div>
-              
+          <!-- <input type="number" id="amount">
+          <div id="paypal"></div> -->
     </Section>
     
 <!-- About Section -->
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="about">
             <div class="about-wt-we-do">
                 <h1 class="about-heading">What <br> <span class="we-do">We Do.</span> </h1>
@@ -128,42 +132,29 @@
 
 
         <!-- Team Section -->
-        <section class="team"> 
+    <section class="team"> 
             <h1 class="team-heading">Team</h1>
 
             <div class="album py-5 bg-light">
                 <div class="container">
             
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><text x="50%" y="50%" fill="#eceeef" dy=".3em"><img src="images/1112.jpg" class="team-image" alt=""></text></svg>
-            
-                        <div class="card-body">
-                            <h3>Name</h3>
-                          <p class="card-text">Position</p>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                          <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><text x="50%" y="50%" fill="#eceeef" dy=".3em"><img src="images/1112.jpg" alt=""></text></svg>
-              
-                          <div class="card-body">
-                              <h3>Name</h3>
-                            <p class="card-text">Position</p>
-                            
-                          </div>
-                        </div>
-                      </div>
+                    
                       <div class="col">
                         <div class="card shadow-sm">
-                          <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><text x="50%" y="50%" fill="#eceeef" dy=".3em"><img src="images/1112.jpg" alt=""></text></svg>
+                          <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <img src="images/founder1.png" alt="Ebenezer Amomah Asamoah">
+                            <title>Placeholder</title>
+                           
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                             
+                            </text>
+                            
+                          </svg>
               
                           <div class="card-body">
-                              <h3>Name</h3>
-                            <p class="card-text">Position</p>
+                              <h3>Ebenezer Amomah Asamoah</h3>
+                            <p class="card-text">Founder/Director</p>
                             
                           </div>
                         </div>
@@ -171,87 +162,74 @@
             
                       <div class="col">
                         <div class="card shadow-sm">
-                          <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><text x="50%" y="50%" fill="#eceeef" dy=".3em"><img src="images/1112.jpg" alt=""></text></svg>
+                          <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                              <img src="images/coodinator1.png" alt="Randolph Reagan Kromah">
+                            </text>
+                          </svg>
               
                           <div class="card-body">
-                              <h3>Name</h3>
-                            <p class="card-text">Position</p>
+                              <h3>Randolph Reagan Kromah</h3>
+                            <p class="card-text">Budumburam Liberian Refugee Camp Project Coordinator</p>
                             
                           </div>
                         </div>
                       </div>
                       <div class="col">
                         <div class="card shadow-sm">
-                          <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><text x="50%" y="50%" fill="#eceeef" dy=".3em"><img src="images/1112.jpg" alt=""></text></svg>
+                          <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                              <img src="images/councilor1.png" alt="Irene Konadu">
+                            </text>
+                          </svg>
               
                           <div class="card-body">
-                              <h3>Name</h3>
-                            <p class="card-text">Position</p>
+                              <h3>Irene Konadu</h3>
+                            <p class="card-text">Project Councilor</p>
                             
                           </div>
                         </div>
                       </div>
                       <div class="col">
                         <div class="card shadow-sm">
-                          <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><text x="50%" y="50%" fill="#eceeef" dy=".3em"><img src="images/1112.jpg" alt=""></text></svg>
+                          <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                              <img src="images/justice.png" alt="Justice">
+                            </text>
+                          </svg>
               
                           <div class="card-body">
-                              <h3>Name</h3>
-                            <p class="card-text">Position</p>
+                              <h3>Brvh Justice</h3>
+                            <p class="card-text">Web Adminstrator</p>
                             
                           </div>
                         </div>
                       </div>
+                      
+                   
             
-                      <div class="col">
-                        <div class="card shadow-sm">
-                          <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><text x="50%" y="50%" fill="#eceeef" dy=".3em"><img src="images/1112.jpg" alt=""></text></svg>
-              
-                          <div class="card-body">
-                              <h3>Name</h3>
-                            <p class="card-text">Position</p>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card shadow-sm">
-                          <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><text x="50%" y="50%" fill="#eceeef" dy=".3em"><img src="images/1112.jpg" alt=""></text></svg>
-              
-                          <div class="card-body">
-                              <h3>Name</h3>
-                            <p class="card-text">Position</p>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card shadow-sm">
-                          <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><text x="50%" y="50%" fill="#eceeef" dy=".3em"><img src="images/1112.jpg" alt=""></text></svg>
-              
-                          <div class="card-body">
-                              <h3>Name</h3>
-                            <p class="card-text">Position</p>
-                            
-                          </div>
-                        </div>
-                      </div>
+                     
+                     
                   </div>
                 </div>
               </div>
 
         
         </section>
+    
+   
 
-
-<!-- <section> <p>Donate</p></section> -->
-        <footer>
+<section> <img src="public/images/2.jpeg" alt=""></section>
+        <footer id="contact">
 
             
             <div class="socials bottom-container">
-              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/everychild_/"><i class="fab fa-instagram"></i></a>
               <a href=""><i class="fab fa-whatsapp"></i></a>
-              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href="https://web.facebook.com/Every-Child-International-111605877333706"><i class="fab fa-facebook"></i></a>
       
     
                
