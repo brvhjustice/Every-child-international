@@ -1,9 +1,9 @@
 
 require('dotenv').config()
 const express = require('express');
-const ejs = require('ejs');
-const paypal = require('paypal-rest-sdk');
-const MongoClient = require('mongodb').MongoClient;
+// const ejs = require('ejs');
+// const paypal = require('paypal-rest-sdk');
+// const MongoClient = require('mongodb').MongoClient;
 // var url = "mongodb://localhost:27017/mydb";
 
 // paypal.configure({
