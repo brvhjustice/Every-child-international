@@ -2,16 +2,6 @@ body {
     font-family: "Montserrat";
   }
 
-/* p{
-  font-size: 2rem;
-} */
-
-/* h1{
-  font-size: 4rem;
-} */
-
-
-
   
 /* Navigation Bar */
 
@@ -109,12 +99,8 @@ color: #fff;
 
 /* Overview Section */
 
-
-
 .overview{
-  
   margin: 3rem 0 5rem 10rem;
-  /* margin: 10rem;  */
 }
 
 .overview-position{
@@ -123,19 +109,15 @@ color: #fff;
   float: left;
   width: 30rem;
   padding-right: 5rem;
-  /* margin-left: 10rem; */
 }
 
 .overview-heading{
-  /* font-family: 'Montserrat', sans-serif;
-  font-size: 5rem;*/
   color: darkorange; 
   text-align: right;
   
 }
 
 .overview-paragraph{
-  /* width: 30rem; */
   font-size: 1.5rem;
 }
 
@@ -183,6 +165,8 @@ color: #fff;
   background-image: url(../images/1.jpeg);
   background-color: #000;
 }
+
+
 /* Footer Section */
 
 
@@ -213,6 +197,23 @@ footer {
   font-size: 1rem;
   font-style: italic;
 }
+
+.amount-label{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 5rem 0 5rem;
+  padding-top: 4rem;
+}
+.amount{
+  border: rgb(0, 0, 0) 2px solid;
+  margin: 0 auto 2rem 5rem;
+  padding: 0 3rem;
+}
+
+
+
 
 @media (max-width: 1028px)  {
 
@@ -357,18 +358,10 @@ font-family: 'Montserrat', sans-serif;
 font-size: 2rem;
 font-weight: bolder;
 text-align: center;
-/* font-family: 'Montserrat', sans-serif;
-font-size: 2rem;
-color: darkorange;
-text-align: center;
-margin-left: auto; */
 }
 
 .overview-paragraph{
-/* text-align: center; */
-/* width: 17rem; */
 font-size: 1rem;
-/* margin-left: auto; */
 }
 
 .scope{
@@ -406,10 +399,27 @@ font-size: 2rem;
 padding-top: 0.5rem;
 }
 
-/* .team-image{
-  width: 15rem;
-} */
 
+.amount-label{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 5rem 0 5rem;
+  padding-top: 4rem;
+}
+.amount{
+  border: rgb(0, 0, 0) 2px solid;
+  margin: 0 15%;
+  padding: 0 3rem;
+}
 
+.footer{
+  position: fixed;
+  top: auto;
+  /* left: 0; */
+  bottom: 0;
+  width: 100%;
+}
 }
 

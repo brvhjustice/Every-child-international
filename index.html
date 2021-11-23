@@ -8,6 +8,7 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ "public/css/style.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/3789bbfefa.js" crossorigin="anonymous"></script>
@@ -58,14 +59,10 @@
                     <li class="nav-item">
                         <a class="nav-link " href="https://forms.gle/DiBk5a6RbdmhZovV6">VOLUNTEER</a>
                     </li>
-                    <!-- <li class="nav-item donate-item"> -->
-                      <!-- <form action="/pay" method="post"> -->
+                  
                     <li class="nav-item">
                       <a href="views/donate.html" class="btn btn-md btn-warning">DONATE</a>
-                      <!-- <button type="submit" id="myDonate" onclick="" class="btn btn-md btn-warning"> DONATE</button>                       -->
-                        <!-- <a class="nav-link donate1" style="color: #fff; background-color: darkorange; text-align: right;" type="submit">DONATE</a>  -->
-                    </li>
-                <!-- </form> -->
+                     </li>
                 </ul>
               </div>
             </nav>
@@ -78,18 +75,12 @@
               
                 <div class="voln-button" id="">
                     <a href="views/donate.html" class="btn btn-lg btn-warning">DONATE</a>
-                  <!-- <button type="submit" id="myDonate" onclick="" class="btn btn-lg btn-warning">DONATE</button> -->
-                  <!-- <input type="number" id="amount"> -->
-                <!-- </form> -->
+              
                 <a class="btn btn-outline-light btn-lg" href="https://forms.gle/DiBk5a6RbdmhZovV6">VOLUNTEER</a>
-              <!-- </form> -->
-                  <!-- <button type="submit"  class="btn btn-outline-light btn-lg "> <a href="https://forms.gle/DiBk5a6RbdmhZovV6">VOLUNTEER</a> </button> -->
-                </div>
+            </div>
               
               
           </div>
-          <!-- <input type="number" id="amount">
-          <div id="paypal"></div> -->
     </Section>
     
 <!-- About Section -->
@@ -222,7 +213,6 @@
     
    
 
-<section> <img src="public/images/2.jpeg" alt=""></section>
         <footer id="contact">
 
             
