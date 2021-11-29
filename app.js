@@ -19,7 +19,9 @@ app.get("/views/donate.html", function(req, res) {
     res.redirect("/")
 })
 
-
+app.get("/views/success.html", function(req, res){
+    res.sendFile(__dirname + "/views/success.html")
+})
 
 
 app.listen(process.env.PORT || 3000, function() {

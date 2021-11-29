@@ -12,14 +12,15 @@ paypal.
         }]
       });
     },
-    // Finalize the transaction after payer approval
+
     onApprove: function(data, actions) {
-      return 
-      actions.order.capture().then(function(orderData) {
+      return actions.order.capture().then(function(orderData) {
         // Successful capture! For dev/demo purposes:
             console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
             var transaction = orderData.purchase_units[0].payments.captures[0];
-            alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
+            // alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
+            // actions.redirect('/success.html');
+            window.location = "/views/success.html"
 
         // When ready to go live, remove the alert and show a success message within this page. For example:
         // var element = document.getElementById('paypal-button-container');
@@ -29,9 +30,6 @@ paypal.
       });
     }
   }).render('#paypal');
-
-
-
   //inserting javascript date to the footer
 
 document.getElementById("date").appendChild(document.createTextNode(new Date().getFullYear()));
